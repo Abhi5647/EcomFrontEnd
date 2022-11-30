@@ -1,0 +1,52 @@
+.greenBackground{
+    margin-top: 20px;
+    height: auto;
+    background-color: rgb(207, 228, 207,.5);
+    border-radius: 40px;
+    place-content: center;
+}
+.mobile{
+position: absolute;
+width:17%;
+height:50%;
+margin-top: 5%;
+
+}
+.bike{
+position: relative;
+width:60%;
+margin-top: 14%;
+margin-left: 10%;
+padding-bottom: 40%;
+z-index: 10;
+}
+.tick{
+    width:7%
+}
+.qrcodecon{
+ margin-top: 8%;
+ float: left;
+ background-color:rgb(164, 217, 173);
+ padding-top: 20px;
+ border-radius: 10px;
+
+}
+.qrcode{
+    width: 80%;
+}
+.cards{
+    place-content: center;
+    margin-top: 3%;
+}
+.cardd{
+    width:20%;
+    border-radius: 25px;
+    margin-left: 25px;
+    border: 1px solid black;
+}
+.cardimg{
+  width:50%;
+  margin-top: 35px;
+  justify-self: center;
+  align-self: center;
+}
