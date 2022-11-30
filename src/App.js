@@ -3,7 +3,6 @@ import Header  from './components/Header'
 import Main  from './components/Main'
 import Footer  from './components/Footer'
 import React, { Component }  from 'react';
-
 // import Carousal  from './components/Carousal';
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
       <div className="container-fluid">
         <div className="row">
           <div className="header"><Header/></div>
-          {/* <div className="carousal"><Carousal/></div>  */} 
           <div className="main"><Main/></div>
           <div className="footer"><Footer/></div>
         </div>

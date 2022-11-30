@@ -1,6 +1,7 @@
 import "./../css/Main.css";
 import pancorner from "./../../src/assets/pancorner.webp";
 import React from "react";
+import Carousal from "./../components/Carousal";
 const Main = () => {
   const x = "./../../src/assets/imageList";
   const a = ".jpg";
@@ -31,6 +32,7 @@ const Main = () => {
       <div className="pancorner ">
         <img src={pancorner}  alt="./../../public/pancorner.webp" className="panimg"/>
       </div>
+      <Carousal/>
      <div className="container-fluid">
      <div className="row ">
         <div className="col-md-1"></div>

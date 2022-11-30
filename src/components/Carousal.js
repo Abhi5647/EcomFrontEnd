@@ -1,35 +1,38 @@
 import React from "react";
-// import Slider from "react-slider";
+import image from '../assets/carousal1.webp'
+import Slider from "react-slick";
+import '../css/carousal.css'
 function Carousal() {
   const settings = {
-    dots: true,
+    className: "center",
+    centerMode: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    centerPadding: "1px",
+    slidesToShow: 4,
+    speed: 50,
   };
   return (
-    <div className="">
-      {/* <Slider {...settings}>
-        <div>
-          <h3>1f34523</h3>
+    <div className="container-fluid cor">
+      <Slider {...settings}>
+        <div class="car" style="width: 3rem;">
+          <img src={image} alt="" srcset="" />
         </div>
-        <div>
-          <h3>235353</h3>
+        <div class="car" style="width: 3rem;">
+          <img src={image} alt="" srcset="" />
         </div>
-        <div>
-          <h3>3353453</h3>
+        <div class="car" style="width: 3rem;">
+          <img src={image} alt="" srcset="" />
         </div>
-        <div>
-          <h3>43453</h3>
+        <div class="car" style="width: 3rem;">
+          <img src={image} alt="" srcset="" />
         </div>
-        <div>
-          <h3>5</h3>
+        <div class="card" style="width: 10rem;">
+          <img src={image} alt="" srcset="" />
         </div>
-        <div>
-          <h3>6</h3>
-        </div>
-      </Slider> */}
+        
+        
+        
+      </Slider>
     </div>
   );
 }
