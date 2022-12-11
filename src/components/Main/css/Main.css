@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  @media only screen and (max-width: 800px) {
+   .panimg{
+    width: 50rem;
+   }
+  }
+.pancorner{
+   display: flex;
+   justify-content: space-around;
+   place-items: center !important;
+}
+#productMap{
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: repeat(5,1fr);
+  gap: 0.5rem;
+  /* justify-content: space-evenly; */
+}
+@media only screen and (min-width: 600px) {
+ #productMap{
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(10,1fr);
+ }
+
+  }
+
+.card{
+}

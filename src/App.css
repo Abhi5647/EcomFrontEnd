@@ -1,7 +1,36 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+@media only screen and (max-width: 480px) and (min-width: 320px)  {
+  /* mobile-devices */
+  body{
+  background: rgb(251, 247, 247);
+  }
 }
 
+@media only screen and (max-width: 768px) and (min-width: 481px)  {
+  /* iPads, Tablets */
+  body{
+    background: rgb(247, 245, 245);
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px)  {
+  /* small screens, laptops */
+  body{
+    background: rgb(249, 249, 251);
+    }
+}
+
+@media only screen and (min-width: 1024px)  {
+  /* Desktops, large screens */
+  body{
+    background: rgb(255, 255, 255);
+    }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

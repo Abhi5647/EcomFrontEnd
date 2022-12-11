@@ -1,39 +1,58 @@
-.Header{
-    height: 90px;
-    background-color: rgb(255, 254, 251);
-    align-items: center;
-    justify-content: center;
-    margin-top: 4px;
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
-.searchbar{
-    float: left;
-    margin-left: 5pc;
-    place-items: center;
-    z-index: 2;
+.header {
+ display: flex;
+ justify-content: space-evenly;
 }
-.input{
-    border: 2px solid black ;
-    border-radius: 10px;
+#logo{
+  margin-top: -15px;
 }
 .inputArea{
-    height: 60px;
-    width: 940px;
-    border-left: none;
-    border-width: 1px;    
-}
 
-.login{
-    float: left;
-    margin-left: 15pc;
-    margin-top: 1pc;
+  width:30rem;
+  height:3.3rem;
+  border-radius: 3%;
+  font-size: 1.5rem;
 }
-.cart{
-    background-color: darkgreen;
-    float: left;
-    height: 65px;
-    display: inline;
-    border-radius: 10px;
-    place-content: center;
-   padding-left: 20px;
-   margin-left: 150px;
+#search{
+  border-radius:.3rem;
+  height:3.3rem;
+  border-left:none;
+  border-bottom-left-radius:0;
+  border-top-left-radius:0;
+}
+#login{
+  font-size: 2rem;
+}
+#login>a{
+  text-decoration: none;
+}
+#cart{
+font-size: 1.5rem;
+padding: .5rem;
+}
+.cartbox{
+background-color: darkgreen;
+border-radius: .5rem;
+
+}
+.item3{
+  display:flex;
+}
+.grid-item{
+  margin:25px 0px;
+}
+@media only screen and (max-width: 1200px) {
+  .header {
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+   }
+   .item3{
+    width:50%;
+    margin:auto;
+  }
 }

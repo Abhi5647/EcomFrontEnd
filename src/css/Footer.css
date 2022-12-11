@@ -1,52 +1,64 @@
-.greenBackground{
-    margin-top: 20px;
-    height: auto;
-    background-color: rgb(207, 228, 207,.5);
-    border-radius: 40px;
-    place-content: center;
+@media only screen and (max-width: 600px) {
+    .greenBack>div{
+        display: block;
+       
+    }
 }
-.mobile{
-position: absolute;
-width:17%;
-height:50%;
-margin-top: 5%;
 
-}
-.bike{
-position: relative;
-width:60%;
-margin-top: 14%;
-margin-left: 10%;
-padding-bottom: 40%;
-z-index: 10;
+.greenBack{
+    background-color:#edffeb ;
+    width: 70rem;
+    height: 33rem;
+    margin: auto;
+    display: flex;
+    grid-template-columns: 50% 50%;
+    border-radius: 1rem;
 }
 .tick{
-    width:7%
-}
-.qrcodecon{
- margin-top: 8%;
- float: left;
- background-color:rgb(164, 217, 173);
- padding-top: 20px;
- border-radius: 10px;
-
+    width: 1rem;
 }
 .qrcode{
-    width: 80%;
+    width: 10rem;
+    margin: 1rem;
 }
-.cards{
-    place-content: center;
-    margin-top: 3%;
+#Footer{
+    place-items: center !important;
 }
-.cardd{
-    width:20%;
-    border-radius: 25px;
-    margin-left: 25px;
-    border: 1px solid black;
+.mobile{
+    width: 26rem;
+    height: 30rem;
+    float: left;
+    margin-top: 3rem;
+}
+.right{
+    float:right;
 }
 .cardimg{
-  width:50%;
-  margin-top: 35px;
-  justify-self: center;
-  align-self: center;
+    margin-top: 1rem;
+}
+.bike{
+    position:relative;
+    width: 21rem;
+    height: 25rem;
+    top:-29rem ;
+}
+
+@media only screen and (max-width: 600px) {
+.feature{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+
+}
+}
+.feature{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+}
+.fcard{
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 15rem;
+    margin: 1rem 2rem;
 }

@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+@media only screen and (max-width: 500px) {
+    .slick-slider{
+        width:40rem
+    }
+   }
+   .card-img-top{
+    place-self: center !important;
+   }
+   .chemhead{
+    padding-bottom: 1rem;
+   }
+   .chemcard{
+    border:1px solid rgb(12, 12, 12);
+    margin:.7rem;
+    padding: .2rem;
+    border-radius: .2rem;
+   }
+   .priceBtn{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 3px 3px 0px;
+   }
+   .priceBtn>button{
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    color:green;
+    background-color: #edffeb;
+    border-radius: .5rem;
+    border:1px solid green;
+   }
+   .cor{
+    overflow-x: hidden;
+   }

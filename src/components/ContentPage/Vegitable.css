@@ -1,0 +1,61 @@
+.outerClass {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  border: 2px solid black;
+  height: auto;
+}
+.NavCard {
+  border: 1px solid rgba(158, 150, 150, 0.18);
+  display: flex;
+  width: 100%;
+}
+.NavCard:hover {
+  background-color: rgb(136, 185, 87);
+}
+.NavImg {
+  width: 3rem;
+  margin: auto;
+}
+.NavText {
+  margin: auto;
+}
+.Product {
+  border: 1px solid gray;
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.SubCat {
+  width: 20rem;
+}
+.Products {
+    width: 80rem;
+    float: right;
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+@media only screen and (max-width: 900px) {
+    .Products {
+        /* width: 80rem;
+        float: right; */
+        border: 1px solid green;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+}
+
+.productBtn {
+  background-color: "#edffeb";
+  width: "4rem";
+  height: "2rem";
+  border-radius: "1rem";
+  float: "right";
+  bottom: 0;
+}
+.productBtn:hover{
+    background-color: green;
+}
