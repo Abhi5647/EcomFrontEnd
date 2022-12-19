@@ -1,18 +1,13 @@
 import React from "react";
 import "../Main/css/Chemist.css";
 import Slider from "react-slick";
-import { useState,useEffect } from "react";
-const Snacks = () => {
+const Snacks = (props) => {
 
-  const [list, SetList] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:3005/Biscuits_Snacks_Chocolates")
-      .then((res) => res.json())
-      .then((res) => {
-        SetList(res);
-      });
-  }, []);
-
+ let list=props.snacks;
+  function AddToCart(item){
+    item = {...item, count:1};
+    console.log(item);
+  }
   const settings = {
     className: "center",
     centerMode: false,
@@ -42,8 +37,8 @@ const Snacks = () => {
                       : item.title}</h4>
             </div>
             <div className="priceBtn">
-            <p >{item.price}</p>
-            <button>Add</button>
+            <p >&#8377; {item.price}</p>
+            <button onClick={()=>props.AddToCart(item)}>Add</button>
             </div>
           </div>
           </div>

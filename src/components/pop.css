@@ -1,0 +1,86 @@
+.popup-overlay{
+    background-color: rgba(0,0,0,0.7);
+    z-index: 9999;
+}
+.modal {
+    font-size: 12px;
+    background-color: white;
+    padding: 40px;
+    overflow-y: auto;
+}
+.CartModal{
+    font-size: 12px;
+    background-color: white;
+    padding: 10px;
+    width: 27rem;
+    float: right;
+    background-color: #ffffff;
+  } 
+  .CartModal> .Mycart{
+    width: 100%;
+    border-bottom: 1px solid rgb(165, 38, 38);
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    height: 100vh;
+  }
+  #popup-4{
+    right: 0;
+    position: absolute!important;
+    overflow: auto;
+    height: 100%;
+  }
+  .cart{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  }
+  
+  .modal > .header {
+    width: 100%;
+    border-bottom: 1px solid rgb(165, 38, 38);
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+  .modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+  .CartItem{
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 0.4rem;
+    background-color: rgb(165, 202, 180);
+    margin-bottom: 0.5rem;
+  }
+  .citem{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .CartText{
+    font-size: 1rem;
+  }
+  .counter{
+    /* background-color: aquamarine;
+    width: 6rem;
+    float: left !important; */
+  }

@@ -1,18 +1,10 @@
 import React from "react";
 import "../Main/css/Chemist.css";
 import Slider from "react-slick";
-import { useState,useEffect } from "react";
 
-const Personal = () => {
-  const [list, SetList] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:3005/Personal_Care")
-      .then((res) => res.json())
-      .then((res) => {
-        SetList(res);
-      });
-  }, []);
-
+const Personal = (props) => {
+  const list=props.personal;
+  
   const settings = {
     className: "center",
     centerMode: false,
@@ -42,8 +34,8 @@ const Personal = () => {
                       : item.title}</h4>
             </div>
             <div className="priceBtn">
-            <p >{item.price}</p>
-            <button>Add</button>
+            <p >&#8377; {item.price}</p>
+            <button onClick={()=>props.AddToCart(item)}>Add</button>
             </div>
           </div>
           </div>

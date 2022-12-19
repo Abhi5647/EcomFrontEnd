@@ -3,6 +3,7 @@
   margin: 0px;
   padding: 0px;
 }
+
 .header {
  display: flex;
  justify-content: space-evenly;
@@ -33,9 +34,10 @@
 #cart{
 font-size: 1.5rem;
 padding: .5rem;
+background-color: darkgreen;
+border-radius: .5rem;
 }
 .cartbox{
-background-color: darkgreen;
 border-radius: .5rem;
 
 }
@@ -56,3 +58,5 @@ border-radius: .5rem;
     margin:auto;
   }
 }
+
+

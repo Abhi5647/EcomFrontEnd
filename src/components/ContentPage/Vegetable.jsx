@@ -22,13 +22,15 @@ const Vegetable = () => {
         SetNavData(res);
       });
   }, []);
-
+  const AddToCart=(item)=>{
+    item = {...item, count:1};
+    console.log(item);
+  }
   const onChange = (data) => {
     let newdata = perdata.filter(
       (e) => e.subcat == data
     ); 
     setData(newdata);
-    console.log(Data);
   };
 
   return (
@@ -41,7 +43,7 @@ const Vegetable = () => {
         <div className="SubCat">
           {navData.map((item,i) => {
             return (
-              <div key={{i}}>
+              <div key={i+"d"}>
                 <button
                   key={item.tname}
                   className="NavCard"
@@ -58,13 +60,14 @@ const Vegetable = () => {
         <div className="Products">
           {Data.map((e, i) => {
             return (
-              <div className="Product" key={i}>
+              <div className="Product" key={i+"s"}>
                 <VegCard
                   key={i}
                   image={e.image}
-                  name={e.name}
+                  title={e.title}
                   price={e.price}
-                  weight={e.weight}
+                  quantity={e.quantity}
+                  AddToCart={AddToCart({})}
                 />
               </div>
             );

@@ -1,20 +1,9 @@
 import React from "react";
 import "../Main/css/Chemist.css";
 import Slider from "react-slick";
-import { useEffect } from "react";
-import { useState } from "react";
+const ChemistCarosal = (props) => {
 
-const ChemistCarosal = () => {
-
-  const [list, SetList] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:3005/ChemistStore")
-      .then((res) => res.json())
-      .then((res) => {
-        SetList(res);
-      });
-  }, []);
-
+  const list=props.chemist;
   const settings = {
     className: "center",
     centerMode: false,
@@ -23,7 +12,6 @@ const ChemistCarosal = () => {
     slidesToShow: 8.5,
     speed: 10,
   };
-
   return (
     <div className="cor">
       <div className="chemhead">
@@ -36,7 +24,7 @@ const ChemistCarosal = () => {
         {list.map((item) => {
           return (
             <div key={item.id}>
-              <div className="chemcard" >
+              <div className="chemcard">
                 <img src={item.image} alt="" className="card-img-top" />
                 <div className="card-body">
                   <h4 className="card-text" style={{ fontWeight: "normal" }}>
@@ -46,8 +34,8 @@ const ChemistCarosal = () => {
                   </h4>
                 </div>
                 <div className="priceBtn">
-                  <p>{item.price}</p>
-                  <button>Add</button>
+                  <p>&#8377; {item.price}</p>
+                  <button onClick={()=>props.AddToCart(item)}>Add</button>
                 </div>
               </div>
             </div>
@@ -57,5 +45,4 @@ const ChemistCarosal = () => {
     </div>
   );
 };
-
 export default ChemistCarosal;
