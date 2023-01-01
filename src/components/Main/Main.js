@@ -56,10 +56,9 @@ const Main = () => {
     // console.log(item);
   }
   return (
-    <>
+    <div className="main">
      <Header />
-      <div className="main">
-        <div className="item1 pancorner ">
+        <div className="item1">
           <img
             src={pancorner}
             alt="./../../public/pancorner.webp"
@@ -91,9 +90,8 @@ const Main = () => {
         <div className="chemist">
           <PersonalCarosal personal={Personal} AddToCart={AddToCart}/>
         </div>
-      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

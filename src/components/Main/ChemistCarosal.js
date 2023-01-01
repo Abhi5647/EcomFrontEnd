@@ -10,7 +10,7 @@ const ChemistCarosal = (props) => {
     infinite: false,
     centerPadding: "1px",
     slidesToShow: 8.5,
-    speed: 10,
+    speed: 0,
   };
   return (
     <div className="cor">

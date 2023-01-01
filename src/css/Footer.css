@@ -7,8 +7,8 @@
 
 .greenBack{
     background-color:#edffeb ;
-    width: 70rem;
-    height: 33rem;
+    width: 70%;
+    /* height: 20% !important; */
     margin: auto;
     display: flex;
     grid-template-columns: 50% 50%;
@@ -20,6 +20,12 @@
 .qrcode{
     width: 10rem;
     margin: 1rem;
+    /* position: absolute;
+    float: right !important; */
+}
+.qrcodecon{
+float: right !important;
+position: absolute;
 }
 #Footer{
     place-items: center !important;
@@ -31,7 +37,9 @@
     margin-top: 3rem;
 }
 .right{
+    display: flex;
     float:right;
+    display: flex;
 }
 .cardimg{
     margin-top: 1rem;

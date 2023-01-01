@@ -40,9 +40,9 @@ export const Registration = () => {
             <div className='Regis'><label className='label' for="email"><b>Email  : </b></label>
             <input className='inputArea' type="email" onChange={handleInput} name="email" id="" /></div>
             <div className='Regis'><label className='label' for="pwd"><b>Password : </b></label>
-            <input className='inputArea' type="text" onChange={handleInput} name="password" id="" /></div>
+            <input className='inputArea' type="password" onChange={handleInput} name="password" id="" /></div>
             <div className='Regis'><label className='label' for="confirm"><b>Confirm Password : </b></label>
-            <input className='inputArea' type="text"  name="confirm" id="" /></div>
+            <input className='inputArea' type="password"  name="confirm" id="" /></div>
             <br />
             <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p><br />
             <button type="submit"  class="registerbtn"><strong>Register</strong></button>

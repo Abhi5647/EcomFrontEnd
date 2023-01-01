@@ -4,9 +4,10 @@
     padding: 0px;
   }
 @media only screen and (max-width: 500px) {
-    .slick-slider{
-        width:40rem
+    .slick-track{
+        width:100% !important;
     }
+   
    }
    .card-img-top{
     place-self: center !important;
@@ -35,4 +36,6 @@
    }
    .cor{
     overflow-x: hidden;
+    width: 100% !important;
    }
+ 

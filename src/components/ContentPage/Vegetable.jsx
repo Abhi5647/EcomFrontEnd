@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Vegitable.css";
 import Header from "../Header";
 import VegCard from "./VegCard";
+import axios from "axios";
 import { useParams } from "react-router-dom";
 const Vegetable = () => {
   const [Data, setData] = useState([]);
@@ -10,11 +11,11 @@ const Vegetable = () => {
  const  {name}=useParams();
  
   useEffect(() => {
-    fetch(`http://localhost:3005/${name}`)
-      .then((res) => res.json())
+    axios.get(`http://localhost:5000/${name}`)
+      
       .then((res) => {
-        setData(res);
-        setPerdata(res);
+        setData(res.data);
+        setPerdata(res.data);
       });
     fetch(`http://localhost:3005/${name}Type`)
       .then((res) => res.json())

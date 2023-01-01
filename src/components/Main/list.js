@@ -17,7 +17,7 @@ const list = [
     { id: 14, src: require("../images/Pharma & Wellness.jpg") , product : " " , ProCategory : " " },
     { id: 15, src: require("../images/Cleaning Essentials.jpg") , product : " " , ProCategory : " " },
     { id: 16, src: require("../images/Home & Office.jpg") , product : " " , ProCategory : " " },
-    { id: 17, src: require("../images/Personal Care.jpg") , product : " " , ProCategory : " " },
+    { id: 17, src: require("../images/Personal Care.jpg") , product : "PersonalCare" , ProCategory : " " },
     { id: 18, src: require("../images/Pet Care.jpg") , product : " " , ProCategory : " " },
   ];
 

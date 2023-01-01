@@ -3,30 +3,47 @@
     margin: 0px;
     padding: 0px;
   }
+  .main{
+    width:100%;
+  }
+  .item1>img{
+    width: 100%;
+  }
   @media only screen and (max-width: 800px) {
    .panimg{
-    width: 50rem;
+    width: 100%;
    }
   }
-.pancorner{
-   display: flex;
-   justify-content: space-around;
-   place-items: center !important;
-}
+
 #productMap{
+  width: 100%;
   display: grid;
-  grid-template-rows: repeat(4,1fr);
-  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(6,1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 0.5rem;
   /* justify-content: space-evenly; */
 }
 @media only screen and (min-width: 600px) {
  #productMap{
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(6,1fr);
+ }
+}
+@media only screen and (min-width: 1000px) {
+ #productMap{
+  width: 100%;
+  display: grid;
   grid-template-rows: repeat(2,1fr);
   grid-template-columns: repeat(10,1fr);
  }
 
   }
 
+#productMap>div{
+  width: 100%;
+}
 .card{
+  width: 100%
 }

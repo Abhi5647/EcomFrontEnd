@@ -12,7 +12,6 @@ function Header() {
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem("Cart"));
     if (items) {
-      console.log(items);
       setCart(items);
     }
   }, []);
